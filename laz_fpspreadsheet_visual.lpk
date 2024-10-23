@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CONFIG>
+  <Package Version="5">
+    <PathDelim Value="\"/>
+    <Name Value="laz_fpspreadsheet_visual"/>
+    <Author Value="Felipe Monteiro de Carvalho and others"/>
+    <CompilerOptions>
+      <Version Value="11"/>
+      <PathDelim Value="\"/>
+      <SearchPaths>
+        <IncludeFiles Value="source"/>
+        <OtherUnitFiles Value="source\visual"/>
+        <UnitOutputDirectory Value="source\visual\lib\$(TargetCPU)-$(TargetOS)"/>
+      </SearchPaths>
+      <Other>
+        <CustomOptions Value="$(IDEBuildOptions)"/>
+      </Other>
+    </CompilerOptions>
+    <Description Value="laz_fpspreadsheet_visual is a package with visual components that allows you display, read and write spreadsheet files in .xls (BIFF/Excel), .ods OpenDocument (LibreOffice/OpenOffice) and .xlsx Open XML (Excel) formats.
+
+It provides graphical components like a grid and chart."/>
+    <License Value="LGPL with static linking exception. This is the same license as is used in the LCL (Lazarus Component Library)."/>
+    <Version Major="1" Minor="16"/>
+    <Files Count="5">
+      <Item1>
+        <Filename Value="source\visual\fpspreadsheetchart.pas"/>
+        <UnitName Value="fpspreadsheetchart"/>
+      </Item1>
+      <Item2>
+        <Filename Value="source\visual\fpspreadsheetctrls.pas"/>
+        <UnitName Value="fpspreadsheetctrls"/>
+      </Item2>
+      <Item3>
+        <Filename Value="source\visual\fpspreadsheetgrid.pas"/>
+        <UnitName Value="fpspreadsheetgrid"/>
+      </Item3>
+      <Item4>
+        <Filename Value="source\visual\fpsvisualutils.pas"/>
+        <UnitName Value="fpsvisualutils"/>
+      </Item4>
+      <Item5>
+        <Filename Value="source\visual\fpsactions.pas"/>
+        <UnitName Value="fpsActions"/>
+      </Item5>
+    </Files>
+    <CompatibilityMode Value="True"/>
+    <RequiredPkgs Count="4">
+      <Item1>
+        <PackageName Value="laz_fpspreadsheet"/>
+        <MaxVersion Major="1" Minor="12"/>
+        <MinVersion Major="1" Minor="13" Valid="True"/>
+      </Item1>
+      <Item2>
+        <PackageName Value="tachartlazaruspkg"/>
+      </Item2>
+      <Item3>
+        <PackageName Value="LCL"/>
+      </Item3>
+      <Item4>
+        <PackageName Value="FCL"/>
+        <MinVersion Major="1" Valid="True"/>
+      </Item4>
+    </RequiredPkgs>
+    <UsageOptions>
+      <UnitPath Value="$(PkgOutDir)"/>
+    </UsageOptions>
+    <PublishOptions>
+      <Version Value="2"/>
+    </PublishOptions>
+  </Package>
+</CONFIG>

@@ -1,0 +1,73 @@
+msgid ""
+msgstr "Content-Type: text/plain; charset=UTF-8"
+
+#: fpszipper.serrbufsizechange
+msgid "Changing buffer size is not allowed while (un)zipping."
+msgstr ""
+
+#: fpszipper.serrcorruptzip
+#, object-pascal-format
+msgid "Corrupt ZIP file %s."
+msgstr ""
+
+#: fpszipper.serrencryptionnotsupported
+#, object-pascal-format
+msgid "Cannot unzip item \"%s\" : encryption is not supported."
+msgstr ""
+
+#: fpszipper.serrfilechange
+msgid "Changing output file name is not allowed while (un)zipping."
+msgstr ""
+
+#: fpszipper.serrfiledoesnotexist
+#, object-pascal-format
+msgid "File \"%s\" does not exist."
+msgstr ""
+
+#: fpszipper.serrinvalidcrc
+#, object-pascal-format
+msgid "Invalid CRC checksum while unzipping %s."
+msgstr ""
+
+#: fpszipper.serrmaxentries
+#, object-pascal-format
+msgid "Encountered %d file entries; maximum supported is %d."
+msgstr ""
+
+#: fpszipper.serrmissingarchivename
+#, object-pascal-format
+msgid "Missing archive filename in streamed entry %d."
+msgstr ""
+
+#: fpszipper.serrmissingfilename
+#, object-pascal-format
+msgid "Missing filename in entry %d."
+msgstr ""
+
+#: fpszipper.serrnofilename
+msgid "No archive filename for examine operation."
+msgstr ""
+
+#: fpszipper.serrnostream
+msgid "No stream is opened."
+msgstr ""
+
+#: fpszipper.serrpatchsetnotsupported
+#, object-pascal-format
+msgid "Cannot unzip item \"%s\" : Patch sets are not supported."
+msgstr ""
+
+#: fpszipper.serrpostoolarge
+#, object-pascal-format
+msgid "Position/offset %d is larger than maximum supported %d."
+msgstr ""
+
+#: fpszipper.serrunsupportedcompressionformat
+#, object-pascal-format
+msgid "Unsupported compression format %d"
+msgstr ""
+
+#: fpszipper.serrunsupportedmultiplediskscd
+msgid "A central directory split over multiple disks is unsupported."
+msgstr ""
+
