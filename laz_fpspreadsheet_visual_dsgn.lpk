@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CONFIG>
+  <Package Version="5">
+    <PathDelim Value="\"/>
+    <Name Value="laz_fpspreadsheet_visual_dsgn"/>
+    <Type Value="RunAndDesignTime"/>
+    <Author Value="W. Pamler"/>
+    <CompilerOptions>
+      <Version Value="11"/>
+      <PathDelim Value="\"/>
+      <SearchPaths>
+        <IncludeFiles Value="source"/>
+        <OtherUnitFiles Value="source\design"/>
+        <UnitOutputDirectory Value="lib\$(TargetCPU)-$(TargetOS)"/>
+      </SearchPaths>
+    </CompilerOptions>
+    <Description Value="laz_fpspreadsheet_visual_dsgn is the design-tim package for the visual fpspreadsheet components."/>
+    <License Value="LGPL with static linking exception. This is the same license as is used in the LCL (Lazarus Component Library)."/>
+    <Version Major="1" Minor="16"/>
+    <Files Count="1">
+      <Item1>
+        <Filename Value="source\design\fpsvisualreg.pas"/>
+        <HasRegisterProc Value="True"/>
+        <UnitName Value="fpsvisualreg"/>
+      </Item1>
+    </Files>
+    <CompatibilityMode Value="True"/>
+    <RequiredPkgs Count="2">
+      <Item1>
+        <PackageName Value="laz_fpspreadsheet_visual"/>
+        <MaxVersion Major="1" Minor="11"/>
+        <MinVersion Major="1" Minor="12" Valid="True"/>
+      </Item1>
+      <Item2>
+        <PackageName Value="FCL"/>
+      </Item2>
+    </RequiredPkgs>
+    <UsageOptions>
+      <UnitPath Value="$(PkgOutDir)"/>
+    </UsageOptions>
+    <PublishOptions>
+      <Version Value="2"/>
+    </PublishOptions>
+  </Package>
+</CONFIG>

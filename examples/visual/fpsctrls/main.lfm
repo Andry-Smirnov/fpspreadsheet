@@ -1,0 +1,395 @@
+object Form1: TForm1
+  Left = 648
+  Height = 621
+  Top = 164
+  Width = 1097
+  ActiveControl = sWorksheetGrid1
+  Caption = 'demo_ctrls'
+  ClientHeight = 601
+  ClientWidth = 1097
+  Menu = MainMenu1
+  ShowHint = True
+  LCLVersion = '2.1.0.0'
+  object sWorkbookTabControl1: TsWorkbookTabControl
+    Left = 0
+    Height = 552
+    Top = 49
+    Width = 1097
+    TabPosition = tpBottom
+    TabIndex = 0
+    Tabs.Strings = (
+      'Sheet1'
+    )
+    Align = alClient
+    TabOrder = 0
+    WorkbookSource = sWorkbookSource1
+    object sWorksheetGrid1: TsWorksheetGrid
+      Left = 2
+      Height = 527
+      Top = 2
+      Width = 1093
+      AutoCalc = True
+      FixedColWidth = 57
+      FrozenCols = 0
+      FrozenRows = 0
+      PageBreakPen.Color = clBlue
+      PageBreakPen.Style = psDash
+      ReadFormulas = True
+      TextOverflow = True
+      WorkbookSource = sWorkbookSource1
+      Align = alClient
+      AutoAdvance = aaDown
+      DefaultColWidth = 64
+      DefaultRowHeight = 22
+      Font.Color = clBlack
+      Font.Height = -13
+      Font.Name = 'Arial'
+      MouseWheelOption = mwGrid
+      Options = [goFixedVertLine, goFixedHorzLine, goVertLine, goHorzLine, goRangeSelect, goRowSizing, goColSizing, goEditing, goThumbTracking, goDblClickAutoSize, goCellHints]
+      ParentFont = False
+      TabOrder = 1
+    end
+  end
+  object ToolBar1: TToolBar
+    Left = 0
+    Height = 26
+    Top = 0
+    Width = 1097
+    AutoSize = True
+    ButtonHeight = 26
+    ButtonWidth = 24
+    Caption = 'ToolBar1'
+    EdgeBorders = []
+    Images = ImageList1
+    TabOrder = 1
+    object ToolButton6: TToolButton
+      Left = 352
+      Top = 0
+      Action = sFontStyleAction1
+    end
+    object ToolButton7: TToolButton
+      Left = 376
+      Top = 0
+      Action = sFontStyleAction2
+    end
+    object ToolButton8: TToolButton
+      Left = 400
+      Top = 0
+      Action = sFontStyleAction3
+    end
+    object FontNameCombo: TsCellCombobox
+      Left = 54
+      Height = 23
+      Hint = 'Cell font name'
+      Top = 0
+      Width = 130
+      WorkbookSource = sWorkbookSource1
+      DropDownCount = 24
+      ItemIndex = 69
+      TabOrder = 0
+      Text = 'Arial'
+    end
+    object FontSizeCombo: TsCellCombobox
+      Left = 184
+      Height = 23
+      Hint = 'Cell font size'
+      Top = 0
+      Width = 48
+      CellFormatItem = cfiFontSize
+      WorkbookSource = sWorkbookSource1
+      DropDownCount = 24
+      ItemIndex = 2
+      TabOrder = 1
+      Text = '10'
+    end
+    object FontColorCombobox: TsCellCombobox
+      Left = 232
+      Height = 24
+      Hint = 'Font color'
+      Top = 0
+      Width = 120
+      CellFormatItem = cfiFontColor
+      ColorRectOffset = 3
+      ColorRectWidth = 12
+      WorkbookSource = sWorkbookSource1
+      DropDownCount = 24
+      ItemIndex = 0
+      TabOrder = 2
+      Text = 'black'
+    end
+    object ToolButton1: TToolButton
+      Left = 1
+      Top = 0
+      Action = FileOpen1
+    end
+    object ToolButton2: TToolButton
+      Left = 25
+      Top = 0
+      Action = FileSaveAs1
+    end
+    object ToolButton3: TToolButton
+      Left = 49
+      Height = 26
+      Top = 0
+      Caption = 'ToolButton3'
+      Style = tbsDivider
+    end
+  end
+  object Panel1: TPanel
+    Left = 4
+    Height = 23
+    Top = 26
+    Width = 1089
+    Align = alTop
+    AutoSize = True
+    BorderSpacing.Left = 4
+    BorderSpacing.Right = 4
+    BevelOuter = bvNone
+    ClientHeight = 23
+    ClientWidth = 1089
+    TabOrder = 2
+    object sWorksheetIndicator1: TsWorksheetIndicator
+      AnchorSideLeft.Control = Panel1
+      AnchorSideTop.Control = Panel1
+      AnchorSideRight.Control = Splitter1
+      Left = 0
+      Height = 23
+      Top = 0
+      Width = 103
+      WorkbookSource = sWorkbookSource1
+      Anchors = [akTop, akLeft, akRight]
+      ItemIndex = 0
+      TabOrder = 0
+      Text = 'Sheet1'
+    end
+    object Splitter1: TSplitter
+      AnchorSideTop.Control = Panel1
+      AnchorSideBottom.Control = sWorksheetIndicator1
+      AnchorSideBottom.Side = asrBottom
+      Left = 103
+      Height = 23
+      Top = 0
+      Width = 5
+      Align = alNone
+      Anchors = [akTop, akBottom]
+    end
+    object sCellIndicator1: TsCellIndicator
+      AnchorSideLeft.Control = Splitter1
+      AnchorSideLeft.Side = asrBottom
+      AnchorSideTop.Control = Panel1
+      AnchorSideRight.Control = Splitter2
+      Left = 108
+      Height = 23
+      Top = 0
+      Width = 98
+      WorkbookSource = sWorkbookSource1
+      Anchors = [akTop, akLeft, akRight]
+      TabOrder = 2
+      Text = 'A1'
+    end
+    object Splitter2: TSplitter
+      AnchorSideTop.Control = Panel1
+      AnchorSideBottom.Control = sWorksheetIndicator1
+      AnchorSideBottom.Side = asrBottom
+      Left = 206
+      Height = 23
+      Top = 0
+      Width = 5
+      Align = alNone
+      Anchors = [akTop, akBottom]
+    end
+    object sCellEdit1: TsCellEdit
+      AnchorSideLeft.Control = Splitter2
+      AnchorSideLeft.Side = asrBottom
+      AnchorSideTop.Control = Panel1
+      AnchorSideRight.Control = Panel1
+      AnchorSideRight.Side = asrBottom
+      Left = 211
+      Height = 23
+      Top = 0
+      Width = 878
+      Anchors = [akTop, akLeft, akRight]
+      TabOrder = 4
+      WorkbookSource = sWorkbookSource1
+    end
+  end
+  object sWorkbookSource1: TsWorkbookSource
+    AutoDetectFormat = False
+    FileFormat = sfUser
+    Options = [boAutoCalc, boCalcBeforeSaving, boReadFormulas]
+    left = 176
+    top = 160
+  end
+  object ActionList1: TActionList
+    Images = ImageList1
+    left = 176
+    top = 248
+    object FileOpen1: TFileOpen
+      Category = 'File'
+      Caption = '&Open ...'
+      Dialog.Filter = 'All spreadsheet files|*.xls;*.xlsx;*.ods;*.csv|All Excel files (*.xls, *.xlsx)|*.xls;*.xlsx|Excel XML spreadsheets (*.xlsx)|*.xlsx|Excel XP/2003 XML spreadsheets (*.xml)|*.xml|Excel 97-2003 spreadsheets (*.xls)|*.xls|Excel 5 spreadsheets (*.xls)|*.xls|Excel 2.1 spreadsheets (*.xls)|*.xls|LibreOffice/OpenOffice spreadsheets (*.ods)|*.ods|HTML files (*.html; *.htm)|*.html;*.htm|Comma-separated text files (*.csv; *.txt)|*.csv;*.txt'
+      Dialog.Options = [ofExtensionDifferent, ofFileMustExist, ofEnableSizing, ofViewDetail]
+      Hint = 'Open spreadsheet file'
+      ImageIndex = 0
+      ShortCut = 16463
+      OnAccept = FileOpen1Accept
+    end
+    object FileSaveAs1: TFileSaveAs
+      Category = 'File'
+      Caption = 'Save &as ...'
+      Dialog.Title = 'AcSaveFileAs'
+      Dialog.Filter = 'Excel XML spreadsheet (*.xlsx)|*.xlsx|Excel 97-2003 spreadsheets (*.xls)|*.xls|Excel 5 spreadsheet (*.xls)|*.xls|Excel 2.1 spreadsheets (*.xls)|*.xls|LibreOffice/OpenOffice spreadsheet (*.ods)|*.ods|Comma-delimited files (*.csv)|*.csv|WikiTable (WikiMedia-Format, *.wikitable_wikimedia)|*.wikitable_wikimedia'
+      Hint = 'Save spreadsheet'
+      ImageIndex = 1
+      OnAccept = FileSaveAs1Accept
+    end
+    object FileExit1: TFileExit
+      Category = 'File'
+      Caption = 'E&xit'
+      Hint = 'Exit'
+      ImageIndex = 2
+      ShortCut = 32856
+    end
+    object sFontStyleAction1: TsFontStyleAction
+      Category = 'FPSpreadsheet'
+      WorkbookSource = sWorkbookSource1
+      Caption = 'Bold'
+      Hint = 'Bold'
+      ImageIndex = 3
+      FontStyle = fssBold
+    end
+    object sFontStyleAction2: TsFontStyleAction
+      Category = 'FPSpreadsheet'
+      WorkbookSource = sWorkbookSource1
+      Caption = 'Italic'
+      Hint = 'Italic'
+      ImageIndex = 4
+      FontStyle = fssItalic
+    end
+    object sFontStyleAction3: TsFontStyleAction
+      Category = 'FPSpreadsheet'
+      WorkbookSource = sWorkbookSource1
+      Caption = 'Underlined'
+      Hint = 'Underlined'
+      ImageIndex = 5
+      FontStyle = fssUnderline
+    end
+  end
+  object ImageList1: TImageList
+    left = 176
+    top = 312
+    Bitmap = {
+      4C7A0600000010000000100000004E0900000000000078DAED967B544DDB1EC7
+      E7182E0E87A381C1F0B89E5D271C54DB0EC72BF77A3FF3BA38C84EA287087985
+      B33987139136228922A112F2886EAF1D874B2CCA496E548ABCA2DA95DE8FFDBD
+      BF39D1B0AE47F1C719F79E71FFF88CB56AFF3E6BFE7E73CDDF9C0B0003C1364B
+      56C4865A62C55C6F08EF2DCCF5FACF9B530BA18ACDC21CED0BAC4F2CC4FECC2A
+      F83F858CA32F28986209B9BFE9DAA6907CE0B84E8FDD8F4AB1282E072303EF61
+      6FAA5EC6A127144CB184DCDF78C53528B70A0159958260BAFFEBA1DBF04AA992
+      E197A9078F25E4FE4F97DC8EBEACC4A1A715027E3FE0403CF6DCAF94E1FBA80A
+      3C9690FB6AADFBE1E71538905926E0F74ACF2BF04C2E97E1935E091ECBD43172
+      7F5DA4C6F74919F6A6170BF8BDA926163BEF96CAF04E2B078F2514327F4DB8A7
+      CFC31278A6140AF8BDB17B1434778A6578A59441AFA71A285EE6AF3AE7E5F580
+      62920B04FCBEC7960BF0482C92B1FB5E298A8A72C1E365FE8A509F9DF70BB1F5
+      4E9E80DF77DF7416EEB75FC9D8F5AF62BC7C99061E2FF39785F86EBF5B00D784
+      1C01BF37FAE914B6C6E7CBD89154047DDC10F07899BFF858805B621E7EBAF952
+      C0EFBBFC781C6EB7F26478D0BA2C3CDF133C5EE6CFF73EE37A5B07F5F52C816B
+      820E5DD605BD97BFE64E11782C5BE03348E65BBA6F57EE88CEB70B4F2BDF7023
+      1B1B6FD11CCDDAAA63B3B7C5BC07C5D233E4EF7FF636C66CBC2DD83C2FEFB62E
+      41B1938EDCCC6033B75C24D87BF0D80FF9F3BC189BBB8B72D96ECC666D5BCB66
+      B8EE243EE94739982D21348444E412E5910E667A0291F6AF895AD80FD18BFA23
+      D2F17B443AF4D5453A0DBA71DE4E39E58DEF539C711B2584BEA2942841555931
+      2A8BF2509EF702150539E2EFAAF21254E4BF446956BA3E3B21BA226E8B657698
+      9DD29AFCE4E2F4DBC80A5E0F7D398F2BC6B56DF350F12A97E25FA0B2B8403CB7
+      B2381F65D98F50FA2C05B90911A06780F228253FAF383D01CF037F14311CEE97
+      E767A1A230578CCBC72FCF7B8ED2E76928799A8287875DA04BFA1517EC947A5E
+      6F519A8467E4F3184E9CFB7CBA66A1AAF415E5446317EA5096958E121ABBE4C9
+      3D64F8AFC2B34B41386FAB049FABC2D4383C3BB68EF27BF89A9C4C72DE8C5DF2
+      0AE5394FAADDE227C9787070251EC704E0DC82DEDC47E1BDAB787A749DC83BCE
+      DD0671DB17E0C6CE858423AE6BECE8FF36E2B7B7DCDFEF8C87117E383BBFB778
+      3F05C9579019B00699545766800B1ED1FDA3C36BA84EC27F35D269BC077E2B90
+      E6EB8C94FD4B917AC0196961FB70DAE68D9F74E9B54B704F10F0DACD38B44AE4
+      FBC077B9F0EEFB2CC33DE27EE86E9C9AA7107EDE6F31E4B8081EBE79061F5BB8
+      7E2B91466373F79ECF52247B2FC15D6F27241DDF8E13D60A4490AF4B88C4237F
+      9737EBA76612F738E2B7636E383ED794AF47E86E858B5CF534DF7363377F12BE
+      16E277D9E3D6E18D08B6227F615FE44AE7C97711BE36F5D227E1FE4D8D2D24DF
+      0D08243FC2A18F3EE7FA595A132EB51EFF3A7FC73E6B714C65A28FB0573E78F9
+      CF137871E544ADEBBFB66F2DAEEE5DCDFD1C9A3FF60F3B6558B89D32F702ADC7
+      3082AFAB33B436426D143849EF28C4DA14C1345741946FA0CA448C7B5465921F
+      686572990DA6FDA21A4F43C28D0DDA2531F3DD35E14DB16F5DF276B97D33667F
+      E2E015B1D9B33577A0B009C2C1830711141424080E0E464848084E9E3C89D0D0
+      5088310609D7ED9BD1FB13072DD7664F71BD0133BB13E8FCF77D50581F155E54
+      5414A2A3A3A1D56A71F1E2455CBE7C1957AF5E051BA09108C606EE90F8784ADB
+      1018CDF443EB713B30746524145601C2FF901B171707F6BDBB4430D67FBB347D
+      6BBCF0FEB62202A69437BF2AE61C1239BFEB9E3E7D1A919191902409ACCF1689
+      60ACDF5669EA6609DFFEE08B21CEE130991728AE8AD9BEA2DE77C70D0C0C14C4
+      C4C480F5DE24118C996D9626FF721D5D671DC4E0A5E7616C7D4C5C153FEC1373
+      C59F71E4C8916AAAAAAAC4B5692FD56E83AE13197F8EC5CF57F1670B4F917B0F
+      5500063A9D8362BA9798677F7F7F141414BC47EBD6ADE713AD99C90669ACFA57
+      5157A789DBF0DD9CC3E8BFE80C145377E1ECD9B3620EF87B7CCBE3C78FC5B56E
+      BB71BBBFEE309CB19EEBA4516B63D140B1181D2D34E86EE98F7E0B43A198A441
+      58589898AB848404242626E2C08103023EA7EC5B678960ACFB6A69844B8C18B7
+      8FFD49E1F3ABC2621BC2C3C3ABDDA4A424910B9FBBD4D45430C3C512C198D172
+      89BF6FEEF335C0FD9E5647A018E32A6A7AEB26272723252545B86969F4FDD1DE
+      562218FBCB1289BF2FEEF3B9E36B4FCCDF90D562AC0FB9C26F3A5D2218EBE428
+      F1F7D569AAB798B7EF26EEC96ED85695C8EA8F0A60F5464A1FA5FE686FF6D518
+      C6DACC13E377B3F0CC6ED8DA32917D35DA8D7E3764F54630F6A7611FA7DE4826
+      7C83A98C7D3D819E37CA8DD51D6EC8EA8E78FD5B2DFD77BF21FED759B972A58A
+      8877767686939393CEC1C1416D6363734AA552E966CC98E13779F264839A9EB1
+      6CD932B59D9D1DECEDEDB56FFF377DFA74BF2953A660F4E8D1F135F98E8E8E7C
+      4C585B5B57FB13264C508F1F3F1E43860C414DFE82050BD473E6CCC1CC993385
+      3F6EDC3883E1C387A713E8DBB7AF5F4D3ED5AAA65A41B5A68F1D3B563D6CD8B0
+      F8A14387C2CCCC4C5B9B39A45AD5E4F25AABE37BF7EEED4763A34B972EF1EDDB
+      B7FFE41CF25A29675E6BB5DFBD7B770372D1A3470FB46CD9D2E9533ED5A97E53
+      AB2CDFB66DDBA26BD7AE303030507FCA1F3870A0DADCDC1CBD7AF5AA7E576DDA
+      B4713234344493264D740D1B36ECF03177C080012AAAF514E5A9A57CB554AB47
+      AB56AD3C9A356BA66DDCB8B14783060D3AFC91FAE58F0EF5FF7AEAC53CEA0950
+      4FE4D1BA8EFDDC67585A5A66F07E9A3871A2EA73DD59B366194F9B360DD41379
+      5F923FED399A49932681FAE1E097F8D4FF19A3468D02F584C5E7BAD4FFC6B477
+      807AE28B72A7FED7F07DC7D4D4F48B72A7FECFE07B4EB76EDD3E3B77DAEBCC95
+      4A258C8C8CF0B92EF5FF7AEAFF58EAFF58EAFF58EAFFD0FFF7D2EF7A7EEB082C
+      5FBEDCE3DDDFACACAC4ED19908EA09A71A9EA1E5E7FF7FFE9F7AD880FA3FBE16
+      E7BF76D1A245F8484F686B71FE6B6D6D6DF1919ED0D6E2FCD752ADF8484F686B
+      71FE6BF97EF5A1DFE84CD4D6E2FCD7D25EF7419F9F8935F9B4D7798C1933869F
+      FFB2BEA5F3D7BC5DBB761E35F9B4D775183C78B08E6A8D37313111E76DE7CE9D
+      CDE9FC8F6FD1A245875AF67F07AAD58FFA5FDBB163472D9DFF1ECD9B3737FE3D
+      D6307DEB807F6B50ADFC5B074D9B3645A3468D50BF7E7DD4A95307FF6D3DF76F
+      B475E861
+    }
+  end
+  object MainMenu1: TMainMenu
+    Images = ImageList1
+    left = 176
+    top = 376
+    object MnuFile: TMenuItem
+      Caption = 'File'
+      object MnuFileOpen: TMenuItem
+        Action = FileOpen1
+      end
+      object MnuFileSaveAs: TMenuItem
+        Action = FileSaveAs1
+      end
+      object MnuFileSeparator: TMenuItem
+        Caption = '-'
+      end
+      object MnuFileExit: TMenuItem
+        Action = FileExit1
+      end
+    end
+    object MnuFormat: TMenuItem
+      Caption = 'Format'
+      object MnuFormatBold: TMenuItem
+        Action = sFontStyleAction1
+        AutoCheck = True
+      end
+      object MnuFormatItalic: TMenuItem
+        Action = sFontStyleAction2
+        AutoCheck = True
+      end
+      object MnuFormatUnderline: TMenuItem
+        Action = sFontStyleAction3
+        AutoCheck = True
+      end
+    end
+  end
+end
