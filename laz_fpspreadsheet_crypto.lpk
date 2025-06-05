@@ -11,6 +11,11 @@
         <OtherUnitFiles Value="source\crypto;source\crypto\3rdParty\aes;source\crypto\3rdParty\fcl-hash"/>
         <UnitOutputDirectory Value="source\lib\$(TargetCPU)-$(TargetOS)"/>
       </SearchPaths>
+      <Parsing>
+        <SyntaxOptions>
+          <UseAnsiStrings Value="False"/>
+        </SyntaxOptions>
+      </Parsing>
     </CompilerOptions>
     <Description Value="Encryption / decryption support for FPSpreadsheet"/>
     <Version Major="1" Minor="16"/>
