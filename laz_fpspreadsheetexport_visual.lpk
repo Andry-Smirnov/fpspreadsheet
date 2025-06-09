@@ -12,11 +12,6 @@
         <OtherUnitFiles Value="source\export"/>
         <UnitOutputDirectory Value="source\export\lib\$(TargetCPU)-$(TargetOS)"/>
       </SearchPaths>
-      <Parsing>
-        <SyntaxOptions>
-          <UseAnsiStrings Value="False"/>
-        </SyntaxOptions>
-      </Parsing>
       <Other>
         <CustomOptions Value="$(IDEBuildOptions)"/>
       </Other>
